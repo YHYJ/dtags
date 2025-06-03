@@ -6,7 +6,7 @@ from functools import wraps
 from pathlib import Path
 from typing import Callable, Dict, List, Optional, Set
 
-from pkg_resources import get_distribution
+from importlib.metadata import version, PackageNotFoundError
 from slugify import slugify
 
 from dtags.exceptions import DtagsError
@@ -50,7 +50,7 @@ def get_argparser(prog: str, desc: str, usage: str) -> ArgumentParser:
         "-v",
         "--version",
         action="version",
-        version=get_distribution("dtags").version,
+        version=version("dtags"),
         help="show version",
     )
     return parser

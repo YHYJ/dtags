@@ -2,9 +2,9 @@
 
 pkgname=dtags
 pkgver=4.0.5
-pkgrel=1
+pkgrel=2
 pkgdesc='Directory Tags for Lazy Programmers'
-url='https://git.yj1516.top/YJ/dtags'
+url='https://git.yj1516.top/AUR/dtags'
 arch=('any')
 license=('MIT')
 depends=('python' 'python-slugify')

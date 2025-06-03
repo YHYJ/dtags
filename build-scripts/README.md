@@ -11,7 +11,9 @@
 
 <!-- vim-markdown-toc GFM -->
 
-* [编译安装](#编译安装)
+* [安装](#安装)
+  * [生成 .SRCINFO 文件](#生成-srcinfo-文件)
+  * [编译安装](#编译安装)
 
 <!-- vim-markdown-toc -->
 
@@ -21,7 +23,15 @@
 
 ---
 
-## 编译安装
+## 安装
+
+### 生成 .SRCINFO 文件
+
+```bash
+makepkg --printsrcinfo > .SRCINFO
+```
+
+### 编译安装
 
 ```bash
 makepkg -si
